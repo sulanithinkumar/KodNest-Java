@@ -7,29 +7,17 @@ public class Main {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Enter Practice Days: ");
-        int practiceDays = scan.nextInt();
-        int totalSolvedProblems = 0;
+        System.out.println("Enter Learner Name: ");
+        String learnerName = scan.nextLine();
 
-        for (int i = 1; i <= practiceDays; i++) {
+        System.out.println("Enter problems solved: ");
+        int problemsSolved = scan.nextInt();
 
-            System.out.println("Enter Problems solved: ");
-            int problemsSolved = scan.nextInt();
-            totalSolvedProblems += problemsSolved;
-        }
-        System.out.println("Total solved: " + totalSolvedProblems);
+        System.out.println("Enter assessment: ");
+        double assessment = scan.nextDouble();
 
-        if (totalSolvedProblems >= 20) {
-
-            System.out.println("Status: Strong progress");
-
-        } else if (totalSolvedProblems >= 10 && totalSolvedProblems <= 19) {
-
-            System.out.println("Status: Keep improving");
-
-        } else {
-            System.out.println("Status: Needs more practice");
-        }
-
+        System.out.println("Learner: " + learnerName);
+        System.out.println("Problems solved: " + problemsSolved);
+        System.out.println("Assessment: " + assessment);
     }
 }
