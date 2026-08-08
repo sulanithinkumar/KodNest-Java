@@ -4,19 +4,18 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
+        Scanner scan = new Scanner(System.in);
         System.out.println("Enter your monthly income: ");
-        double monthlyIncome = scanner.nextDouble();
+        double monthlyIncome = scan.nextDouble();
 
         System.out.println("Enter your room rent: ");
-        double rent = scanner.nextDouble();
+        double rent = scan.nextDouble();
 
         System.out.println("Enter food expense: ");
-        double foodExpense = scanner.nextDouble();
+        double foodExpense = scan.nextDouble();
 
         System.out.println("Enter travel expense: ");
-        double travelExpense = scanner.nextDouble();
+        double travelExpense = scan.nextDouble();
 
         double totalExpense = rent + foodExpense + travelExpense;
         double remaining = monthlyIncome - totalExpense;
@@ -26,8 +25,6 @@ public class Main {
         System.out.println("Total expense: " + totalExpense);
         System.out.println("Remaining: " + remaining);
         System.out.println("Status: " + status);
-
-        scanner.close();
-
     }
+
 }
