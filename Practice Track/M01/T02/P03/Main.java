@@ -2,37 +2,32 @@
 public class Main {
 
     public static void main(String[] args) {
-        int roundCode = 4;
-        int attemptsUsed = 2;
-        int maxAttempts = 3;
-        String roundName = "";
+        int practiceDays = 5;
+        int sessionsPerDay = 2;
+        int revisionDay = 3;
+        int finalDaySessionLimit = 1;
+        int targetSessions = 7;
+        int completedSessions = 0;
 
-        switch (roundCode) {
+        outer:
+        for (int i = 1; i <= practiceDays; i++) {
 
-            case 1:
-                roundName = "Aptitude Round";
-                break;
+            inner:
+            for (int j = 1; j <= sessionsPerDay; j++) {
 
-            case 2:
-                roundName = "Techinal Round";
-                break;
-
-            case 3:
-                roundName = "HR Round";
-                break;
-
-            case 4:
-            case 5:
-                roundName = "Final Review";
-                break;
-
-            default:
-                roundName = "Invalid Round";
-
+                if (i == revisionDay) {
+                    continue inner;
+                }
+                if (i == practiceDays && j > finalDaySessionLimit) {
+                    break;
+                }
+                System.out.println("Day " + i + " - Session " + j);
+                completedSessions += 1;
+            }
         }
-        String attemptStatus = (attemptsUsed < maxAttempts ? "Attempt Available" : "Limit Reached");
+        String status = completedSessions == targetSessions ? "Target Achieved" : "Target Pending";
 
-        System.out.println("Current Round: " + roundName);
-        System.out.println("Attempt Status: " + attemptStatus);
+        System.out.println("Completed Sessions: " + completedSessions);
+        System.out.println(status);
     }
 }
