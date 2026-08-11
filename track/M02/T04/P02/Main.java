@@ -16,11 +16,17 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         Student s1 = new Student();
-
+        System.out.println("Enter id: ");
         s1.id = scanner.nextInt();
         scanner.nextLine();
+
+        System.out.println("Enter Name: ");
         s1.name = scanner.nextLine();
+
+        System.out.println("Enter Course: ");
         s1.course = scanner.nextLine();
+
+        System.out.println("Enter Java Score: ");
         s1.javaScore = scanner.nextDouble();
 
         System.out.println("Student Profile");
