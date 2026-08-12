@@ -12,8 +12,8 @@ class Employee {
     }
 
     void displayDetails() {
-        System.out.println("Employee Name: " + this.name);
-        System.out.println("Salary: " + this.salary);
+        System.out.println("Employee Name: " + name);
+        System.out.println("Salary: " + salary);
 
     }
 

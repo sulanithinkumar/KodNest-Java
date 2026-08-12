@@ -11,7 +11,7 @@ class Student {
     }
 
     void displayName() {
-        System.out.println("Student Name: " + this.name);
+        System.out.println("Student Name: " + name);
     }
 }
 
