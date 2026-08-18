@@ -16,6 +16,7 @@ public class Main {
             total += arr[i];
         }
         System.out.print("Array values are: ");
+
         for (int i = 0; i <= arr.length - 1; i++) {
             System.out.print(arr[i] + (i == arr.length ? "" : " "));
         }
