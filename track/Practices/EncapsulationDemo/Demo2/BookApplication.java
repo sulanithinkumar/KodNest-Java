@@ -5,9 +5,9 @@ public class BookApplication {
 
         Book b = new Book();
 
-        b.setData(200);
+        b.setData(500);
 
-        b.getData();
+        System.out.println(b.getData());
 
     }
 }
