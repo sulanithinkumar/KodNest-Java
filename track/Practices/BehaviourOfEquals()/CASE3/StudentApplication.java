@@ -10,7 +10,7 @@ public class StudentApplication {
         System.out.println(s1);
         System.out.println(s2);
 
-        System.out.println(s1.getClass());
+        System.out.println(s1.getClass()); // getClass() will give on which class we are currently working
         System.out.println(s3.getClass());
     }
 }
