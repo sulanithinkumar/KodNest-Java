@@ -8,7 +8,6 @@ class Main2 {
 
         divide();
 
-        System.out.println("Main method execution completed");
     }
 
     static void divide() throws Exception {
